@@ -1,0 +1,44 @@
+<section class="directory">
+  <div class="heading">
+    <div>
+      <p class="eyebrow">Creative partners</p>
+      <h1>Client Roster</h1>
+      <p class="muted">Trusted studio relationships, portfolios, and the people behind each project.</p>
+    </div>
+    <a routerLink="/clients/new" class="primary">+ New Client</a>
+  </div>
+
+  <div *ngIf="errorMessage" class="alert danger">{{ errorMessage }}</div>
+  <div *ngIf="loading" class="loading">Loading clients...</div>
+
+  <div *ngIf="!loading && !clients.length" class="empty">
+    <strong>No clients yet.</strong>
+    <span>Add the first studio partner to begin the roster.</span>
+  </div>
+
+  <div *ngIf="!loading && clients.length" class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>Contact</th>
+          <th>Studio</th>
+          <th>Email</th>
+          <th>Phone</th>
+          <th>Portfolio</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let client of clients">
+          <td><strong>{{ client.name }}</strong></td>
+          <td>{{ client.companyName }}</td>
+          <td>{{ client.email }}</td>
+          <td>{{ client.phone || '—' }}</td>
+          <td>
+            <a *ngIf="client.portfolioUrl" [href]="client.portfolioUrl" target="_blank" rel="noopener">Open portfolio</a>
+            <span *ngIf="!client.portfolioUrl">—</span>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>

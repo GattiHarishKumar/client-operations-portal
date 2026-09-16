@@ -1,0 +1,19 @@
+<header class="topbar">
+  <div class="brand">
+    <div class="brand-mark">NS</div>
+    <div>
+      <div class="brand-name">Northstar Studio</div>
+      <div class="brand-subtitle">Client Ledger</div>
+    </div>
+  </div>
+
+  <nav>
+    <a routerLink="/clients" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Clients</a>
+    <a routerLink="/clients/new" routerLinkActive="active">New Client</a>
+    <a routerLink="/meetings" routerLinkActive="active">Meetings</a>
+  </nav>
+</header>
+
+<main class="page">
+  <router-outlet></router-outlet>
+</main>
