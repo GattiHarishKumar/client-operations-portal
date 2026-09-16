@@ -2,20 +2,6 @@
 
 A full-stack operations management platform for organizing client relationships, projects, meetings, and delivery workflows.
 
-## UI Preview
-
-### Client Directory
-
-![Client Directory](docs/screenshots/client-directory.png)
-
-### Add New Client
-
-![Add New Client](docs/screenshots/new-client.png)
-
-### Meeting Calendar
-
-![Meeting Calendar](docs/screenshots/meeting-calendar.png)
-
 ## Stack
 - Angular 20 standalone SPA
 - Express.js REST API
