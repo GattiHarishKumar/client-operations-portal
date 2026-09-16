@@ -243,13 +243,17 @@ app.delete('/meetings/:id', async (req, res) => {
   }
 });
 
-app.listen(PORT, async () => {
-  try {
-    const connection = await db.getConnection();
-    console.log('Successfully connected to MySQL database.');
-    connection.release();
-  } catch (error) {
-    console.error('Unable to connect to MySQL database:', error.message);
-  }
-  console.log(`Express API server running on http://localhost:${PORT}`);
-});
+if (require.main === module) {
+  app.listen(PORT, async () => {
+    try {
+      const connection = await db.getConnection();
+      console.log('Successfully connected to MySQL database.');
+      connection.release();
+    } catch (error) {
+      console.error('Unable to connect to MySQL database:', error.message);
+    }
+    console.log(`Express API server running on http://localhost:${PORT}`);
+  });
+}
+
+module.exports = app;
