@@ -1,8 +1,8 @@
 {
-  "name": "henna-client-tracker-api",
+  "name": "client-operations-portal-api",
   "version": "1.0.0",
   "private": true,
-  "description": "Express API for Henna Solutions Client Tracker",
+  "description": "Express API for the Client Operations Portal",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",

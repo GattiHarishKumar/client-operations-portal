@@ -1,6 +1,6 @@
-# Northstar Studio - Client Tracker
+# Client Operations Portal
 
-A full-stack client/project/meeting tracker for a creative studio operations workflow.
+A full-stack operations management platform for organizing client relationships, projects, meetings, and delivery workflows.
 
 ## Stack
 - Angular 20 standalone SPA
@@ -12,7 +12,7 @@ A full-stack client/project/meeting tracker for a creative studio operations wor
 ## Structure
 
 ```text
-henna-client-portal/
+client-operations-portal/
 ├── frontend/                 # Angular SPA
 ├── backend/                  # Express + MySQL API
 ├── database/schema.sql       # Database schema + seed data
@@ -70,6 +70,6 @@ cd frontend
 npm run build
 ```
 
-The generated Angular output is under `dist/henna-client-portal/browser`.
+The generated Angular output is under `dist/client-operations-portal/browser`.
 
 > `node_modules`, Angular cache, build output and `.env` are intentionally excluded from the zip.

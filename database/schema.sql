@@ -1,5 +1,5 @@
-CREATE DATABASE IF NOT EXISTS henna_client_db;
-USE henna_client_db;
+CREATE DATABASE IF NOT EXISTS client_operations_db;
+USE client_operations_db;
 
 CREATE TABLE IF NOT EXISTS clients (
     client_id INT AUTO_INCREMENT PRIMARY KEY,

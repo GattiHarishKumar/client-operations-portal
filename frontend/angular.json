@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "henna-client-portal": {
+    "client-operations-portal": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -49,10 +49,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "henna-client-portal:build:production"
+              "buildTarget": "client-operations-portal:build:production"
             },
             "development": {
-              "buildTarget": "henna-client-portal:build:development"
+              "buildTarget": "client-operations-portal:build:development"
             }
           },
           "defaultConfiguration": "development"
